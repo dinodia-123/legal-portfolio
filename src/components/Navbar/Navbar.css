@@ -1,0 +1,29 @@
+/* Navbar.css */
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Or your desired background */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Optional: adjust inner spacing of header */
+  .nav-container header {
+    padding: 1rem 2rem;
+  }
+  
+  /* To prevent content being hidden under navbar */
+  .body-container,
+  .carousel-container {
+    margin-top: 80px; /* Adjust based on navbar height */
+  }
+  .nav-link {
+    color: black !important;
+  }
+  
+  .nav-link:hover {
+    color: #555 !important; /* Optional: darker shade on hover */
+  }
