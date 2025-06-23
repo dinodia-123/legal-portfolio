@@ -1,29 +1,40 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import p1 from '../assets/p1.jpg';
+import p6 from '../assets/p6.jpg';
 import p2 from '../assets/p2.jpg';
 import p3 from '../assets/p3.jpg';
 import p12 from '../assets/p12.jpg';
+import p5 from '../assets/p5.jpg';
+
 
 const teamMembers = [
   {
-    name: 'Adv Dinesh Bishnoi',
-    title: 'Founder & Senior Advocate',
-    image: p1,
+    name: ' Dinesh Bishnoi',
+    title: 'Founder',
+    image: p6,
     bio: 'Advocate Dinesh Bishnoi is a respected legal expert known for his strategic insight, courtroom experience, and client-first approach. As founder of DB Law Chambers, he has built a reputation for delivering effective legal solutions with integrity and discipline across diverse practice areas.'
   },
   {
-    name: 'Adv Kuldeep Vishnoi',
-    title: 'Legal Consultant',
+    name: ' Bharat Budania',
+    title: 'Advocate',
     image: p2,
-    bio: 'Adv. Kuldeep Vishnoi is a dedicated law graduate from UFYLC, University of Rajasthan, with experience in litigation, legal research, and national moot courts. He has trained under senior advocates at the Rajasthan High Court and is known for his clarity, discipline, and advocacy skills.'
+    bio: 'Advocate Dinesh Bishnoi is a respected legal expert known for his strategic insight, courtroom experience, and client-first approach. As founder of DB Law Chambers, he has built a reputation for delivering effective legal solutions with integrity and discipline across diverse practice areas.'
   },
+  
   {
-    name: 'Adv Anil Bhadu',
-    title: 'Junior Advocate',
+    name: ' Anil Bhadu',
+    title: 'Advocate',
     image: p3,
     bio: 'Adv. Anil Bhadu is a dedicated legal professional with a strong focus on litigation and legal research. Known for his analytical approach and attention to detail, he plays a key role in supporting case strategy and preparation.'
-  }
+  },
+  {
+    name: 'Kuldeep Vishnoi',
+    title: 'Advocate',
+    image: p5,
+    bio: 'Adv. Kuldeep Vishnoi is a dedicated law graduate from UFYLC, University of Rajasthan, with experience in litigation, legal research, and national moot courts. He has trained under senior advocates at the Rajasthan High Court and is known for his clarity, discipline, and advocacy skills.'
+  },
+  
+
 ];
 
 const About = () => {
@@ -53,7 +64,7 @@ const About = () => {
         src={p12}
         alt="Office"
         className="img-fluid"
-        style={{ height: '400px', width: '100%', objectFit: 'cover' }}
+        style={{ height: '500px', width: '100%', objectFit: 'cover' }}
       />
     </div>
   </div>
@@ -79,29 +90,48 @@ const About = () => {
         </div>
       </div>
 
-      {/* Team Section */}
-      <div className="text-center mb-4">
-        <h2 className="fw-bold text-black mb-4">Meet Our Team</h2>
+       {/* Team Section */}
+<div className="text-center mb-5">
+  <h2 className="fw-bold text-black mb-4">Meet Our Team</h2>
+</div>
+
+<div className="d-flex flex-column gap-5">
+  {teamMembers.map((member, i) => (
+    <div
+      key={i}
+      className={`d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded-4 shadow-sm ${
+        i % 2 !== 0 ? 'flex-md-row-reverse' : ''
+      }`}
+      style={{ backgroundColor: '#f8f9fa' }}
+    >
+      {/* Profile Image */}
+      <div className="text-center">
+        <img
+          src={member.image}
+          alt={member.name}
+          style={{
+            width: '400px',
+            height: '400px',
+            objectFit: 'cover',
+            borderRadius: '50%',
+            border: '6px solid white',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+          }}
+          className="img-fluid"
+        />
       </div>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
-        {teamMembers.map((member, i) => (
-          <div className="col" key={i}>
-            <div className="card h-100 border-0 shadow-sm">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="card-img-top"
-                style={{ height: '300px', objectFit: 'cover' }}
-              />
-              <div className="card-body text-center">
-                <h5 className="card-title fw-bold text-black">{member.name}</h5>
-                <h6 className="text-muted">{member.title}</h6>
-                <p className="card-text text-muted">{member.bio}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+
+      {/* Description */}
+      <div className="text-md-start text-center">
+        <h4 className="fw-bold text-black mb-1">{member.name}</h4>
+        <h6 className="text-muted mb-3">{member.title}</h6>
+        <p className="text-muted mb-0" style={{ maxWidth: '600px' }}>{member.bio}</p>
       </div>
+    </div>
+  ))}
+</div>
+
+
     </div>
   );
 };
