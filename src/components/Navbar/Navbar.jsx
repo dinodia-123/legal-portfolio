@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Navbar.css"
 import ham from "../../assets/ham.png";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -24,25 +25,16 @@ const Navbar = () => {
 
         <ul className="nav nav-pills">
           <li className="nav-item">
-            <a href="#" className="nav-link" aria-current="page">
-              Home
-            </a>
+            <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
-              Features
-            </a>
+            <Link to="/features" className="nav-link">Features</Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
-              Pricing
-            </a>
+            <Link to="/about" className="nav-link">About Us</Link>
           </li>
-          
           <li className="nav-item">
-            <a href="#" className="nav-link">
-              About
-            </a>
+            <Link to="/contact" className="nav-link">Contact Us</Link>
           </li>
         </ul>
       </header>

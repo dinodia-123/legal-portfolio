@@ -1,23 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from '../src/components/Navbar/Navbar.jsx';
-import Body from '../src/components/Body/Body.jsx';
-import Footer from '../src/components/Footer/Footer.jsx';
-import BootstrapCarousel from './components/Carousel/BootstrapCarousel.jsx';
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import DisclaimerModal from './components/Modal/DisclaimerModal';
+
+// Pages
+import Body from './components/Body/Body'; // Home page
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
-  
+  const [accepted, setAccepted] = useState(false);
+
+  const handleAccept = () => {
+    setAccepted(true);
+  };
+
   return (
     <>
-    <Navbar/>
-    <Body/>
-   
-    <Footer/>
+      {!accepted && <DisclaimerModal onAccept={handleAccept} />}
+      {accepted && (
+        <Router>
+          <Navbar />
+          <div className="main-content">
+            <Routes>
+              <Route path="/" element={<Body />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+          <Footer />
+        </Router>
+      )}
     </>
-  )
+  );
 }
 
 export default App;

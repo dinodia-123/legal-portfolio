@@ -9,7 +9,7 @@ const BootstrapCarousel = () => {
       <Carousel.Item>
         <img
           className="c-img"
-          src="https://images.unsplash.com/photo-1555374018-13a8994ab246?auto=format&fit=crop&w=1200&h=400&q=80"
+          src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="First slide"
           
         />
@@ -22,7 +22,7 @@ const BootstrapCarousel = () => {
       <Carousel.Item>
         <img
           className="c-img"
-          src="https://plus.unsplash.com/premium_photo-1695942301094-472c4dbf9130?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1569511165985-82767e534026?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Second slide"
           
         />
@@ -35,7 +35,7 @@ const BootstrapCarousel = () => {
       <Carousel.Item>
         <img
           className="c-img"
-          src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1666268015177-fa0d5598296b?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Third slide"
          
         />
