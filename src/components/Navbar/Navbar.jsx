@@ -20,7 +20,7 @@ const Navbar = () => {
         height="30"
         className="me-2"
       />
-          <span className="fs-4">Dinesh Bishnoi Associates</span>
+          <span className="fs-4">Dinesh Bishnoi & Associates</span>
         </a>
 
         <ul className="nav nav-pills">
@@ -28,14 +28,18 @@ const Navbar = () => {
             <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/features" className="nav-link">Features</Link>
+            <Link to="/about" className="nav-link">About Us</Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">About Us</Link>
+            <Link to="/services" className="nav-link">Services</Link>
+          </li>
+         <li className="nav-item">
+            <Link to="/blogs" className="nav-link">Blogs</Link>
           </li>
           <li className="nav-item">
             <Link to="/contact" className="nav-link">Contact Us</Link>
           </li>
+          
         </ul>
       </header>
     </div>

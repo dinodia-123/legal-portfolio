@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="big-footer">
       <div className="footer-wrapper">
         <div className="footer-section">
-          <h3>Dinesh Bishnoi Associates</h3>
+          <h3>Dinesh Bishnoi & Associates</h3>
           <p>
             216- 2nd Floor, Crystal Mall, Collectorate Cir,<br />
             near Session's Court, Barodia Scheme,<br />
@@ -26,7 +26,7 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>Contact</h4>
-          <p>Email: info@bishnoiassociates.com</p>
+          <p>Email: adv.dineshbishnoi@gmail.com</p>
           <p>Phone: +91-9876543210</p>
         </div>
       </div>

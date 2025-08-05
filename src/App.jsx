@@ -10,6 +10,7 @@ import DisclaimerModal from './components/Modal/DisclaimerModal';
 import Body from './components/Body/Body'; // Home page
 import About from './pages/About';
 import Contact from './pages/Contact';
+import BlogPage from './pages/BlogPage';
 
 function App() {
   const [accepted, setAccepted] = useState(false);
@@ -29,6 +30,7 @@ function App() {
               <Route path="/" element={<Body />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/blogs" element={<BlogPage/>} />
             </Routes>
           </div>
           <Footer />
