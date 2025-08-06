@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Dinesh Bishnoi & Associates</h3>
           <p>
-            216- 2nd Floor, Crystal Mall, Collectorate Cir,<br />
-            near Session's Court, Barodia Scheme,<br />
-            Gopalbari, Jaipur, Rajasthan 302016.
+            Office No. 216 2<sup>nd</sup> floor Crystal mall <br />
+            Swai Jai Singh Highway Bani park,<br />
+            Jaipur, Rajasthan 302016
           </p>
         </div>
 
