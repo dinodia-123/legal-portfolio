@@ -57,7 +57,9 @@ const Contact = () => {
         <div className="col-md-6">
           <div className="p-4 bg-white rounded-4 shadow-sm h-100">
             <h4 className="fw-semibold mb-4 text-black">Reach Us At</h4>
-            <p className="mb-3 text-black"><strong>Address:</strong><br />Office No. 216 second floor crystal mall swai jai Singh Highway bani park, Jaipur, Rajasthan 302016</p>
+            <p className="mb-3 text-black"><strong>Address:</strong><br />Office No. 216, 2<sup>nd</sup> floor Crystal mall <br />
+            Swai Jai Singh Highway, Bani park,<br />
+            Jaipur, Rajasthan - 302016</p>
             <p className="mb-3 text-black"><strong>Email:</strong><br /><a href="mailto:adv.dineshbishnoi@gmail.com" className="text-decoration-none text-black">adv.dineshbishnoi@gmail.com</a></p>
             <p className="mb-3 text-black"><strong>Phone:</strong><br /><a href="tel:+91 9518875785" className="text-decoration-none text-black">+91 9518875785</a></p>
             <p className="mb-0 text-black"><strong>Office Hours:</strong><br />Mon–Fri: 9:00 AM – 8:00 PM</p>
